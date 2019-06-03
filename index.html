@@ -5,6 +5,8 @@
     <title>Christopher Stubbs</title>
     <meta charset="utf-8">
     <meta NAME="description" CONTENT="Web Development Portfolio for Christopher Stubbs">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b68f18887.js"></script>
@@ -27,10 +29,10 @@
         </header>
         <main class="main">
             <div class="section about" id="about">
-                <div class="section__photo">
+                <div class="section__photo animated fadeIn">
                     <img src="./img/Portrait.jpg" alt="Portrait of myself">
                 </div>
-                <div class="section__paragraph">
+                <div class="section__paragraph animated fadeInUp">
                     <p>
                         Hi, I'm Chris, I'm a full stack web developer from San Diego, California. I fell in love with coding from my very first "Hello World", and decided that I should make a career out of doing something I enjoy.
                         I am a true believer in life-long learning and luckily theres
@@ -38,7 +40,7 @@
                     </p>
                 </div>
             </div>
-            <div class="section skills" id="skills">
+            <div class="section skills animated fadeIn" id="skills">
                 <div class="section__title">
                     <h2>Skills</h2>
                 </div>
@@ -59,13 +61,13 @@
                         </div>
                         <div class="section__card--content">
                             <p>
-                                ReactJS, Rails, NodeJS, Express, PostreSQL, MongoDB, Git, Yarn/NPM
+                                ReactJS, Rails, NodeJS, Express, PostreSQL, MongoDB, Git, Bootstrap, Yarn/NPM
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section projects" id="projects">
+            <div class="section projects animated fadeIn" id="projects">
                 <div class="section__title">
                     <h2>Some Projects</h2>
                 </div>
@@ -118,10 +120,35 @@
                     </div>
                 </div>
             </div>
-            <Object class="svg svg__programming" type="image/svg+xml" data="./svg/programming_code_3.svg">
+            <div class="section contact" id="contact">
+                <div class="section__title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="section__content">
+                    <div class="contact__wrap">
+                        <form name="contact" method="POST" data-netlify="true" class="contact__form">
+                            <p class="contact__form--input--wrap">
+                                <input type="text" name="name" placeholder="Full Name" data-validate="Must Enter Name" class="contact__form--input" />
+                            </p>
+                            <div class="contact__form--input--wrap">
+                                <input type="email" name="email" placeholder="Email" data-validate="Must Enter Email" class="contact__form--input" />
+                            </div>
+                            <div class="contact__form--input--wrap">
+                                <textarea name="message" placeholder="Message" data-validate="Must Enter Message" class="contact__form--input"></textarea>
+                            </div>
+                            <div class="contact__form--btn--wrap">
+                                <button type="submit" class="contact__form--button">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <Object class="svg svg__programming animated fadeIn" type="image/svg+xml" data="./svg/programming_code_3.svg">
 
             </Object>
-            <Object class="svg svg__macbook" type="image/svg+xml" data="./svg/macbook.svg">
+            <Object class="svg svg__macbook animated fadeIn" type="image/svg+xml" data="./svg/macbook.svg">
 
             </Object>
             <Object class="svg svg__scrum_board" type="image/svg+xml" data="./svg/scrum_board.svg">
