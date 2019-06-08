@@ -55,7 +55,7 @@ p {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     border-bottom: 1px solid #000;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
     background-color: rgba(120, 157, 183, 0.75)
 }
 
@@ -124,7 +124,8 @@ p {
     height: 100%;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
+    border-radius: 5px;
     background: linear-gradient(to top, rgb(247, 246, 238), rgba(255, 184, 56, 0.1));
 }
 
@@ -182,7 +183,7 @@ p {
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
     padding: 5rem;
 }
 
