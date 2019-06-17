@@ -8,8 +8,6 @@ html {
 body {
     font-family: 'Amiri', serif;
     min-height: 100vh;
-    height: 100%;
-    overflow: hidden;
     color: #000;
     font-size: 10px;
 }
@@ -39,8 +37,6 @@ p {
 }
 
 .app {
-    height: 100vh;
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4rem 1fr;
@@ -52,11 +48,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    border-bottom: 1px solid #000;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
-    background-color: rgba(120, 157, 183, 0.75)
+    padding: 0 2.5rem;
 }
 
 .header__links a {
@@ -82,14 +74,15 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 2.5rem 0;
+    width: 100%;
+    justify-content: center;
+    margin: 2.5rem 0;
 }
 
 .section__title {
-    padding: 2.5rem 0;
+    padding: 2rem;
     text-decoration-line: underline;
+    text-align: justify;
 }
 
 .section__photo {
@@ -101,7 +94,9 @@ p {
     width: 200px;
     border-radius: 50%;
     border: 1px solid rgba(254 ,299 ,165 ,0.25);
-    box-shadow: 0 4px 8px 12px rgba(254 ,299 ,165 ,0.25);
+    box-shadow:
+        0 4px 8px 12px rgba(254 ,299 ,165 ,0.25),
+        0 8px 16px 24px rgba(254 ,299 ,165 ,0.05);
 }
 
 .section__paragraph {
@@ -185,6 +180,12 @@ p {
     margin: auto;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
     padding: 5rem;
+}
+
+@media screen and (max-width: 726px) {
+    .contact {
+        margin-top: 17rem;
+    }
 }
 
 .contact__form {
