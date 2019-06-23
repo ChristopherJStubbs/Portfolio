@@ -39,16 +39,24 @@ p {
 .app {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: 1fr;
     background: linear-gradient(to top, rgb(247, 246, 238), rgba(120, 157, 183, 0.5));
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main {
+    grid-column: 1 / -1;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 .header {
-    grid-column: 1 / -1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2.5rem;
+    padding: 0 5%;
 }
 
 .header__links a {
@@ -60,14 +68,6 @@ p {
 .header__links a:hover {
     color: #ffb838;
     transition: all 0.25s;
-}
-
-.main {
-    grid-column: 1 / -1;
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin-bottom: 2rem;
-    position: relative;
 }
 
 .section {
@@ -95,7 +95,7 @@ p {
     border-radius: 50%;
     border: 1px solid rgba(254 ,299 ,165 ,0.25);
     box-shadow:
-        0 4px 8px 12px rgba(254 ,299 ,165 ,0.25),
+        0 4px 8px 12px rgba(254 ,299 ,165 ,0.2),
         0 8px 16px 24px rgba(254 ,299 ,165 ,0.05);
 }
 
@@ -103,6 +103,11 @@ p {
     padding-top: 1.5rem;
     width: 80%;
     margin: auto;
+}
+
+.section__paragraph p {
+    max-width: calc(70em * 0.5);
+    margin: 0 auto;
 }
 
 .section__content {
@@ -115,13 +120,14 @@ p {
 }
 
 .section__card {
+    border-top: 6px solid rgba(255, 184, 56, 0.75);
     display: flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.5), 0 15px 40px rgba(166, 173, 201, 0.2);
     border-radius: 5px;
-    background: linear-gradient(to top, rgb(247, 246, 238), rgba(255, 184, 56, 0.1));
+    background: rgba(247, 246, 238, 1.0);
 }
 
 .section__card:hover {
@@ -142,9 +148,9 @@ p {
     flex-direction: column;
     height: 100%;
     padding-top: 2rem;
-    text-align: center;
-    justify-content: flex-end;
-    justify-content: space-around;
+    text-align: justify;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .section__card--content p {
@@ -157,6 +163,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 .tagWrap a {
@@ -174,7 +181,8 @@ p {
 .contact__wrap {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to top, rgb(247, 246, 238), rgba(120, 157, 183, 0.2));
+    background: rgba(247, 246, 238, 1.0);
+    border-top: 6px solid rgba(120, 157, 183, 1.0);
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
@@ -215,7 +223,7 @@ p {
     line-height: 1rem;
     margin: auto;
     outline: none;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .contact__form--btn--wrap {
