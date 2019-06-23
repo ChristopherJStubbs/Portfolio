@@ -131,8 +131,8 @@ p {
 }
 
 .section__card:hover {
-    box-shadow: 0 8px 16px 0 rgba(255, 184, 56, 0.3);
-    filter: brightness(110%);
+    box-shadow: 0 8px 16px 0 rgba(255, 184, 56, 0.1);
+    filter: brightness(105%);
 }
 
 .section__card--title {
@@ -147,6 +147,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 90%;
     padding-top: 2rem;
     text-align: justify;
     justify-content: space-between;
