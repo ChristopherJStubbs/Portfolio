@@ -151,7 +151,7 @@ p {
 .section__paragraph {
     padding-top: 1.5rem;
     line-height: 1.5rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.02rem;
     width: 80%;
     margin: auto;
 }
@@ -210,7 +210,6 @@ p {
     justify-content: space-between;
     color: rgba(0, 0, 0, 0.85);
     line-height: 1.5rem;
-    letter-spacing: 0.04rem;
 }
 
 .section__card--content p {
